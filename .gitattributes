@@ -1,29 +1,19 @@
-# Python
-__pycache__/
-*.py[cod]
-.python-version
-venv/
-env/
-.venv/
-.env
+# Auto-detect text files and normalize line endings
+* text=auto
 
-# Logs
-*.log
-logs/
+# Python files
+*.py text diff=python
 
-# Sensitive data
-*.env
-*.secret
-config.ini
+# Markdown files
+*.md text
 
-# IDE
-.vscode/
-.idea/
+# Force LF line endings
+*.py text eol=lf
+*.md text eol=lf
 
-# OS files
-.DS_Store
-Thumbs.db
-
-# Git
-*.orig
-*.rej
+# Explicit binaries
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
