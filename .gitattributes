@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.python-version
+venv/
+env/
+.venv/
+.env
+
+# Logs
+*.log
+logs/
+
+# Sensitive data
+*.env
+*.secret
+config.ini
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+*.orig
+*.rej
