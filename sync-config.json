@@ -2,14 +2,10 @@
   "RepoType": "business",
   "AssociatedDevRepo": "https://github.com/manasia83/TestRepo.git",
   "SyncRules": {
-    "ExcludedPaths": ["/venv/", "/__pycache__/", ".git/"],
-    "AllowedFileTypes": [".py", ".sql", ".json", ".yml", ".md", ".txt", ".sh"],
+    "ExcludedPaths": ["venv/", "__pycache__/", ".git/", ".vscode/"],
+    "AllowedFileTypes": [".py", ".md"],
     "MaxFileSizeKB": 2048,
-    "SyncBranches": ["TestBusiness"],
-    "PythonSpecific": {
-      "RequiredDependencies": ["flask", "sqlalchemy", "pandas"],
-      "EntryPoints": ["api_server.py"]
-    }
+    "SyncBranches": ["TestBusiness"]
   },
   "CompatibilitySignature": "smartfin-python-v1"
 }
