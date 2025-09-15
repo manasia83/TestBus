@@ -1,0 +1,14 @@
+MONITOR_CMD="$PYTHON $SCRIPT_DIR/monitoring_proxy.py"
+
+
+# Run monitor and get return code
+set +e
+MONITOR_OUT="$($MONITOR_CMD 2>&1)"
+RC=$?
+set -e
+
+if [ "$RC" -eq 0 ]; then
+    log "Monitor: proxy healthy."
+    echo  "Monitor: proxy healthy."
+    exit 0
+fi
